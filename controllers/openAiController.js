@@ -37,7 +37,8 @@ const generateTagLine = async (req, res) => {
 
         res.status(400).json({
           success: false,
-          error: "Generate Image Failed",
+          error: "Generate Tagline Failed",
+          message: error.message
         });
     }
 }
